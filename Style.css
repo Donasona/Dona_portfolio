@@ -89,6 +89,26 @@ nav {
     max-width: 800px;
 }
 
+.gradient-text {
+  background: linear-gradient(to right, #22d3ee, #0e7490); /* cyan-400 to cyan-700 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.25rem; /* default text-4xl */
+}
+
+@media (min-width: 640px) {
+  .gradient-text {
+    font-size: 3.75rem; /* sm:text-6xl */
+  }
+}
+
+.gradient-text-h {
+  background: linear-gradient(to right, #22d3ee, #0e7490); /* cyan-400 to cyan-700 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-size: 2.25rem;  */
+}
+
 .home-content h1 {
     font-size: 3.5rem;
     font-weight: 700;
@@ -338,7 +358,7 @@ h2 {
     display: block;
     width: 50px;
     height: 3px;
-    background: #48CFCB;
+    background: linear-gradient(to right, #06b6d4, #2563eb);
     margin: 10px auto 0;
     border-radius: 2px;
 }
